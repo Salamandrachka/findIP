@@ -16,7 +16,7 @@ getIpButton.addEventListener('click', async () => {
     const ipData = await ipResponse.json();
     const clientIp = ipData.ip;
 
-    const geoResponse = await fetch(`//ip-api.com/json/${clientIp}?fields=66846719`);
+    const geoResponse = await fetch(`https://ip-api.com/json/${clientIp}?fields=66846719`);
     const geoData = await geoResponse.json();
     console.log(geoData);
 
